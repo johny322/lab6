@@ -2,4 +2,4 @@
 Выполнил студент группы 426
 Болдырев Иван Сергеевич
 # Вариант №8
-
+![](https://github.com/johny322/lab6/blob/master/func.jpg)
