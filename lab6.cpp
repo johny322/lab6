@@ -196,13 +196,14 @@ int main() {
     
     while (det_grad > 0.0001)
     { 
+        alfa = 1;
         h = 0.1;
         a[0] = x1;
         b[0] = x2;
         swenn_x1(h, a, x2);
         swenn_x2(h, b, x1);
-        
-        
+        cout << "a: " << a[0] << "   " << a[1] << endl;
+        cout << "b: " << b[0] << "   " << b[1] << endl;
         
         
         gessian[0][0] = sec_derivative_x1(x1, x2);
@@ -246,14 +247,12 @@ int main() {
         
         x2 = x22;
         
-        /*if (f) {
-            f << x1 << ";" << x2 << "   " << "a:" << a[0] << "-" << a[1] << "    "<< "b:" << b[0] << "-" << b[1] << endl;
-        }*/
+        
         count++;
     }
     f.close();
-    cout << "x1 = " << x1 << "    " << "x2 = " << x2 << endl << "count = " << count << endl;
-    cout << "alfa1 = " << alfa1 << "    " << "alfa2 = " << alfa2 << endl;
+    cout << "x1 = " << x1 << "    " << "x2 = " << x2 << endl;
+    cout << "alfa1 = " << alfa1 << "    " << "alfa2 = " << alfa2 << endl << "iterations = " << count << endl;
     
     return 0;
     
