@@ -81,7 +81,7 @@ void alfa_x1(double &alfa, double a0, double a1, double x_const) {
     double f1, f2, f3, f_min, f_, F;
     if (a1 < a0) { c = a1; a1 = a0; a0 = c; }
     dx = 0.01; // прирощение
-    e = 0.001; //точность
+    e = 0.0001; //точность
     x1 = a0;
     do {
         x2 = x1 + dx;
@@ -119,7 +119,7 @@ void alfa_x2(double &alfa, double b0, double b1, double x_const) {
     double f1, f2, f3, f_min, f_, F;
     if (b1 < b0) { c = b1; b1 = b0; b0 = c; }
     dx = 0.01; // прирощение
-    e = 0.001; //точность
+    e = 0.0001; //точность
     x1 = b0;
     do {
         x2 = x1 + dx;
