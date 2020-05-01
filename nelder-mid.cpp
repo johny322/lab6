@@ -1,7 +1,7 @@
 #include <iostream>
 #include <stdlib.h>
 #include <math.h>
-#include <conio.h>
+// #include <conio.h>
 #define n  2
 using namespace std;
 double f (double x1, double x2) {
